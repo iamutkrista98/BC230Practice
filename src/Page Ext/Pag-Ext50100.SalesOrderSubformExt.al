@@ -3,6 +3,14 @@ pageextension 50100 "Sales Order Subform Ext" extends "Sales Order Subform"
 
     layout
     {
+        addafter("No.")
+        {
+            field(VendorItemNo; Rec.VendorItemNo)
+            {
+                ApplicationArea = All;
+            }
+
+        }
         modify("No.")
         {
             AssistEdit = true;
@@ -41,4 +49,7 @@ pageextension 50100 "Sales Order Subform Ext" extends "Sales Order Subform"
             end;
         }
     }
+
+
+
 }
